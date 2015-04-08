@@ -4,3 +4,9 @@ C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\PuppetMas
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.csprojResolveAssemblyReference.cache
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.exe
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.pdb
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\bin\Debug\PuppetMaster.exe.config
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.exe
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.pdb
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\bin\Debug\PuppetMaster.exe
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\bin\Debug\PuppetMaster.pdb
+C:\Users\João Alexandre\Desktop\PADI\ConsoleApplication1\PuppetMaster\obj\Debug\PuppetMaster.csprojResolveAssemblyReference.cache
