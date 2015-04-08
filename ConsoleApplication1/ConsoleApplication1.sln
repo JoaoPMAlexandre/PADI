@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D510623D-1F83-4506-94EA-C05622ED3B4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuppetMaster", "PuppetMaster\PuppetMaster.csproj", "{27B7D82D-3887-43D2-A0E3-991B5FF3C391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,10 @@ Global
 		{D510623D-1F83-4506-94EA-C05622ED3B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D510623D-1F83-4506-94EA-C05622ED3B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D510623D-1F83-4506-94EA-C05622ED3B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B7D82D-3887-43D2-A0E3-991B5FF3C391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B7D82D-3887-43D2-A0E3-991B5FF3C391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B7D82D-3887-43D2-A0E3-991B5FF3C391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B7D82D-3887-43D2-A0E3-991B5FF3C391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
