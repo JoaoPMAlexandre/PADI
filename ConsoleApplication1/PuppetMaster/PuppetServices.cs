@@ -9,32 +9,31 @@ namespace PuppetMaster
 {
     public class PuppetServices
     {
-        public int newWorker() {
-            Worker worker = new Worker();
+        private List<Worker> workerslist;
 
+
+        public PuppetServices()
+        {
+            workerslist = new List<Worker>();
+        }
+        public int createWorker(int id, String serviceUrl, String entryUrl)
+        {
+            Worker worker = new Worker(id, serviceUrl, entryUrl);
             Thread thread = new Thread(new ThreadStart(worker.check));
 
+            if (entryUrl != null)
+            {
+                //SupostoAvisarOListeningWorker
+            }
+
             thread.Start();
-            // Spin for a while waiting for the started thread to become
-            // alive:
             while (!thread.IsAlive) ;
-            while (true) ;
-
-            // Put the Main thread to sleep for 1 millisecond to allow oThread
-            // to do some work:
-            Thread.Sleep(1);
-
-            // Request that oThread be stopped
-            thread.Abort();
-
-            // Wait until oThread finishes. Join also has overloads
-            // that take a millisecond interval or a TimeSpan object.
-            thread.Join();
 
             Console.WriteLine();
             Console.WriteLine("Worker has finished");
 
             return 0;
         }
+
     }
 }

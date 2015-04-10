@@ -22,9 +22,34 @@ namespace PADIProject
                 String[] cmd = instruction.Split(separators);
 
                 if (cmd[0].ToLower().Equals("worker"))
-                {
-                    Client client = new Client(cmd[1]);
-                    client.createWorker();
+                { 
+                    int id;
+                    
+                    try
+                    {
+                        id = Convert.ToInt32(cmd[1]);
+                        Client client = new Client(cmd[2]);
+                        if (cmd.Length == 4)
+                        {
+                          client.createWorker(id, cmd[3], cmd[4]);
+                        }
+                        if (cmd.Length == 3)
+                        {
+                            client.createWorker(id, cmd[3], null);
+                        }
+                    }
+                    catch (FormatException e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                    }
+                    catch (OverflowException e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                    }
+                    catch (IndexOutOfRangeException e)
+                    {                    
+                        Console.WriteLine(e.StackTrace);
+                    }
                 }
             }
 

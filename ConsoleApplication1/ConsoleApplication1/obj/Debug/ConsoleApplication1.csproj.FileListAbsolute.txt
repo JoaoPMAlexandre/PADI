@@ -20,3 +20,11 @@ C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\ConsoleAp
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PADIProject.pdb
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PuppetMaster.exe
 C:\Users\Miguel Rebocho\VisualStudio_Projects\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PuppetMaster.pdb
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PADIProject.exe.config
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\obj\Debug\PADIProject.exe
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\obj\Debug\PADIProject.pdb
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PADIProject.exe
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PADIProject.pdb
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PuppetMaster.exe
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\bin\Debug\PuppetMaster.pdb
+C:\Users\João Alexandre\Desktop\Universidade\PADI\PADI\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

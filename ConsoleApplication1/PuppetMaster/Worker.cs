@@ -8,10 +8,18 @@ namespace PuppetMaster
 {
     class Worker
     {
+        private int id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         private JobTracker jobTracker;
 
-        public Worker() {
-            jobTracker = new JobTracker();
+        public Worker(int id, String serviceUrl, String entryUrl)
+        {
+            this.id = id;
+            jobTracker = new JobTracker(serviceUrl, entryUrl);
         }
 
         public void check() {
@@ -23,6 +31,22 @@ namespace PuppetMaster
 
         private class JobTracker
         {
+            private String serviceUrl
+            {
+                get { return serviceUrl; }
+                set { serviceUrl = value; }
+            }
+            private String entryUrl
+            {
+                get { return entryUrl; }
+                set { entryUrl = value; }
+            }
+
+            public JobTracker(String serviceUrl, String entryUrl)
+            {
+                this.serviceUrl = serviceUrl;
+                this.entryUrl = entryUrl;
+            }
 
         }
     }

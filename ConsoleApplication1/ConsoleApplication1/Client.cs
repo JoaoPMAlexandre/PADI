@@ -13,12 +13,30 @@ namespace PADIProject
     public class Client
     {
         private PuppetServices services;
-        private String puppetMasterUrl;
+
+        private String puppetMasterUrl  {
+            get { return puppetMasterUrl; }
+            set
+            {
+                try
+                {
+                    puppetMasterUrl = value;
+                }
+                catch (StackOverflowException e)
+                {
+                    Console.WriteLine(e.StackTrace);
+                }
+            } 
+        }
 
         public Client(String url) {
+            this.puppetMasterUrl = url;    
+        }
+        
+        public int Connect() {
             try
             {
-                puppetMasterUrl = url;
+                
                 TcpChannel channel = new TcpChannel();
                 ChannelServices.RegisterChannel(channel, false);
                 WellKnownClientTypeEntry remoteType = new WellKnownClientTypeEntry(typeof(PuppetServices), puppetMasterUrl);
@@ -27,17 +45,19 @@ namespace PADIProject
                 string objectUri;
                 System.Runtime.Remoting.Messaging.IMessageSink messageSink = channel.CreateMessageSink(puppetMasterUrl, null, out objectUri);
 
-                services = new PuppetServices();   
+                services = new PuppetServices();
+                return 0;
             }
             catch (RemotingException e)
             {
                 Console.WriteLine(e.StackTrace);
+                return -1;
             }
         }
 
-        public void createWorker()
+        public void createWorker(int id, String serviceUrl, String entryUrl)
         {
-            services.newWorker();
+            services.createWorker(id, serviceUrl, entryUrl);
         }
     }
 }
