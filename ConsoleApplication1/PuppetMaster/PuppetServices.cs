@@ -9,17 +9,18 @@ namespace PuppetMaster
 {
     public class PuppetServices
     {
-        private List<Worker> workerslist;
+        private Dictionary<int, Worker> workerlist;
 
 
         public PuppetServices()
         {
-            workerslist = new List<Worker>();
+            workerlist = new Dictionary<int,Worker>();
         }
         public int createWorker(int id, String serviceUrl, String entryUrl)
         {
             Worker worker = new Worker(id, serviceUrl, entryUrl);
-            Thread thread = new Thread(new ThreadStart(worker.check));
+            workerlist.Add(id, worker);
+            Thread thread = new Thread(new ThreadStart(worker.check)); //Just a test, to see if it exists
 
             if (entryUrl != null)
             {
@@ -33,6 +34,19 @@ namespace PuppetMaster
             Console.WriteLine("Worker has finished");
 
             return 0;
+        }
+
+        public void freeze(int id)
+        {
+            Worker worker = workerlist[id];
+            Thread thread = new Thread(new ThreadStart(worker.freezeWorker));
+            thread.Suspend();
+        }
+
+        public void unfreeze(int id)
+        {
+            Worker worker = workerlist[id];
+
         }
 
     }

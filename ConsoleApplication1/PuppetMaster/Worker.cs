@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace PuppetMaster
 {
@@ -27,6 +28,11 @@ namespace PuppetMaster
             {
                 Console.WriteLine("I am alive!");
             }
+        }
+
+        public void freezeWorker()
+        {
+            Console.WriteLine("This Thread is freezed");
         }
 
         private class JobTracker
