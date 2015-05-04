@@ -13,22 +13,21 @@ namespace PADIProject
     public class Client
     {
         private PuppetServices services;
-
-        private String puppetMasterUrl  {
-            get { return puppetMasterUrl; }
-            set
-            {
-                try
-                {
-                    puppetMasterUrl = value;
-                }
-                catch (StackOverflowException e)
-                {
-                    Console.WriteLine(e.StackTrace);
-                }
-            } 
+        private String puppetMasterUrl;
+    
+        public String getPuppetMasterUrl() {
+            return puppetMasterUrl;
+        }
+        public void setPuppetMasterUrl(String url) {
+            puppetMasterUrl = url;
         }
 
+        public void toStringInfo() {
+            String s = "number of workers: " + services.getWorkerlistSize() + "; URL: " + getPuppetMasterUrl();
+            Console.WriteLine(s); 
+
+        }
+           
         public Client(String url) {
             this.puppetMasterUrl = url;    
         }

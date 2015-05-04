@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace PuppetMaster
 {
-    public class PuppetServices
+    public class PuppetServices: MarshalByRefObject
     {
         private Dictionary<int, Worker> workerlist;
 
@@ -16,6 +16,11 @@ namespace PuppetMaster
         {
             workerlist = new Dictionary<int,Worker>();
         }
+
+        public int getWorkerlistSize() {
+            return workerlist.Count;
+        }
+
         public int createWorker(int id, String serviceUrl, String entryUrl)
         {
             Worker worker = new Worker(id, serviceUrl, entryUrl);

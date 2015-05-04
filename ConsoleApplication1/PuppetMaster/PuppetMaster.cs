@@ -15,8 +15,9 @@ namespace PuppetMaster
         {
             TcpChannel channel = new TcpChannel(8086);
             ChannelServices.RegisterChannel(channel, false);
-
-            RemotingConfiguration.RegisterWellKnownServiceType(typeof(PuppetServices), "ServerServices", WellKnownObjectMode.Singleton);
+            PuppetServices ps = new PuppetServices();
+            RemotingServices.Marshal(ps, "PuppetServicesName", typeof(PuppetServices) );
+            //RemotingConfiguration.RegisterWellKnownServiceType(typeof(PuppetServices), "ServerServices", WellKnownObjectMode.Singleton);
 
             System.Console.WriteLine("<enter> para sair...");
             System.Console.ReadLine();
